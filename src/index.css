@@ -1,13 +1,482 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700;1,800&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --primary: hsl(0, 0%, 89%);
 }
+
+#main_logo{
+  height: 40px;
+  width: 150px;
+}
+
+nav{
+  color: #fff !important;
+  width: 100vw;
+  box-shadow: 0 6px 9px -6px #000;
+
+}
+
+nav li{
+  margin-left: 66px;
+}
+
+.active::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 85%;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(218, 218, 73);
+  transition: all .5s linear;
+}
+
+.nav-item{
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav-item::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 85%;
+  width: 0;
+  height: 3px;
+  background-color: rgb(218, 218, 73);
+  transition: all .5s linear;
+}
+.nav-item:hover::before{
+  width: 100%;
+}
+
+.button1{
+  margin-left: 200px;
+  cursor: pointer;
+}
+.button1:hover{
+  transform: scale(1.02);
+}
+
+.nav_button{
+  background-color: rgb(218, 218, 73);
+  color: #fff;
+  outline: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  
+}
+#contact_button{
+  text-decoration: none;
+}
+
+.nav_button:hover{
+  color: #fff;
+   box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.5);;
+}
+
+.header{
+  width:100%;
+  height: 95vh;
+  background-color: #343a40 !important;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 80%, 0 100%);
+}
+
+.main_header{
+  height: 100vh;
+  background-color: rgba(230, 230, 230, 0.96);
+}
+
+.wraper{
+  position: absolute;
+  display: inline-flex;
+  top: 150px;
+  left: 350px;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.wraper .static_text{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.wraper .static_text span{
+  color: rgb(194, 194, 56);
+  font-style:italic;
+  font-weight: 700;
+}
+
+.wraper .dynamic_text{
+  margin-left: -290px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin-top: 180px;
+}
+
+.dynamic_text li{
+  color: rgb(194, 194, 56);
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 9s steps(3) infinite;
+}
+
+@keyframes slide{
+  100%{
+    top: -270px;
+  }
+}
+
+
+.dynamic_text li span{
+  position: relative;
+}
+.dynamic_text li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 90%;
+  width: 100%;
+  background: #343a40;
+  border-left: 2px solid rgb(218, 218, 73);
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing{
+  40%,60%{
+    left: calc(100% + 30px)
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+/*About page */
+
+.about{
+  background-color:rgba(230, 230, 230, 0.96);
+  height: 100vh;
+}
+
+.about h2{
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: 'Raleway', sans-serif;
+font-family: 'Squada One', cursive;
+}
+.about h2 span{
+  color: rgb(194, 194, 56);
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+font-family: 'Squada One', cursive;
+} 
+
+.about_img_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_img{
+  height: 400px;
+  clip-path: circle(40%);
+}
+
+
+/*Footer css*/
+
+.footer{
+  position: relative;
+  height: auto;
+  background-color: #343a40;
+}
+
+.footer p{
+  color: #fff;
+  padding-left: 200px;
+  font-style: italic;
+}
+.footer h5{
+  color: black;
+  -webkit-text-fill-color: white ; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 30px;
+  padding-left: 450px;
+  font-style: oblique;
+}
+.main1{
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  bottom: 15px;
+}
+
+.icon{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 15px;
+  bottom: 20px;
+  border-radius: 50px;
+  transition: all .8s;
+}
+
+.icon:hover{
+  background: #e60073;
+  box-shadow: 0 0 20px #e60073;
+}
+
+.svg1{
+  height: 80px;
+  width: 80px;
+}
+
+.circle1{
+  cx:30px;
+  cy:30px;
+  r:28;
+  stroke: white;
+  stroke-width: 4px;
+  fill: none;
+}
+
+.icon:hover:nth-child(3){
+  background: #1877f2;
+  box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(4){
+  background: #25d366;
+  box-shadow: 0 0 20px #25d366;
+}
+
+.icon:hover:nth-child(5){
+  background: #1da1f2;
+  box-shadow: 0 0 20px #1da1f2;
+}
+
+.icon i{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+svg circle{
+  stroke-dasharray: 150;
+  transition: all .8s;
+}
+
+.icon:hover svg circle{
+  stroke-dasharray: 220;
+}
+
+.contactme p3{
+  position: absolute;
+  color: #fff;
+  left: 450px;
+  bottom: 5px;
+}
+
+/*Contact us css*/
+.contactConatiner{
+  background-color: rgba(230, 230, 230, 0.96);
+  height: auto;
+}
+.contactConatiner h1{
+  padding: 20px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 3px rgba(150, 150, 150, 1);
+  font-family: 'Sigmar One', cursive;
+}
+#inputName{}
+.form{
+  margin-left: 430px;
+}
+.button2{
+  margin-left: 190px;
+  margin-bottom: 10px;
+}
+
+
+
+/*Projects css*/
+
+.projectDiv{
+  height: auto;
+  background-color: #343a40;
+}
+
+.projectDiv h1{
+  padding: 30px;
+  color: #fff;
+  text-shadow: 0px 4px 3px #000;
+  font-family: 'Sigmar One', cursive;
+}
+
+#images1{
+  height: 200px;
+  width: 250px;
+  box-shadow: 0 10px 20px -6px #000;
+  border-radius: 20px;
+  position: relative;
+}
+.cardCaption{
+  height: 200px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  opacity: 0;
+}
+.cardCaption:hover{
+  opacity: 1;
+}
+.links{
+  margin-left: 110px;
+}
+#anchor{
+  text-decoration: none;
+}
+
+
+/*Skills css*/
+
+.skills{
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+.skills li{
+  color: #fff;
+}
+.skills h3{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0px 4px 3px #000;
+}
+.skills h3 span{
+  color: rgb(218, 218, 73);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0px 4px 3px #000;
+}
+Line{
+  width: 0;
+  animation: line .8s linear;
+}
+
+.pro_div{
+  display: grid;
+}
+.pro_div ul{
+  position: relative;
+  font-size: 20px;
+}
+.circle1{
+  position: absolute;
+  left: 25%;
+}
+.circle2{
+  position: absolute;
+  left: 60%;
+}
+
+.Circle_ul{
+  position: absolute;
+  top: -85px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+  font-weight: bolder;
+}
+.Circle_ul li{
+  height: 25px;
+}
+
+.Circle2_ul{
+  position: absolute;
+  top: -85px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+  font-weight: bolder;
+}
+.pro_div .Circle2_ul .li1{
+  position: relative;
+  left: -100px;
+}
+.pro_div .Circle2_ul .li2{
+  position: absolute;
+  left: 370px;
+}
+
+
+
+/*Education css*/
+
+.Education_main{
+  height: 100%;
+  background-color: rgba(230, 230, 230, 0.96);
+}
+
+.heading_ed{
+  padding: 20px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 3px rgba(150, 150, 150, 1);
+  font-family: 'Sigmar One', cursive;
+}
+
+.Education_main h3{
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0px 3px 5px #000;
+}
+.Education_main h4{
+  font-size: 22px;
+  font-style: italic;
+}
+
+.Education_main h3 span{
+  color: rgb(218, 218, 73);
+}
+
+
+
+
+
