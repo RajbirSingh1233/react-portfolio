@@ -11,7 +11,7 @@ const Projects =() =>{
     return(
     <>
     
-        <div className="projectDiv projects">
+        <div className="projectDiv projects pt-5">
         <h1 className="text-center"> PROJECTS </h1>
             <div className="container-fluid">
             <div className="row">
@@ -36,7 +36,7 @@ const Projects =() =>{
                     <img src={tictactoe} alt="men" id="images1"/>
                         <div className="cardCaption">
                                 <h2 className="text-center p-4">Tic-Tac_toe</h2>
-                                <a href="https://github.com/RajbirSingh1233/tic-tac-toe" className="links" id="anchor" target="_blank">🔗</a>
+                                <a href="https://tic-tac-toe-game-1.herokuapp.com/" className="links" id="anchor" target="_blank">🔗</a>
                         </div>
                     </div>
                     
@@ -51,14 +51,14 @@ const Projects =() =>{
                     <img src={googlekeep1} alt="men" id="images1"/>
                         <div className="cardCaption">
                                 <h2 className="text-center p-4">Google-Keep-Clone</h2>
-                                <a href="https://github.com/RajbirSingh1233/google-keep-clone" className="links" id="anchor" target="_blank">🔗</a>
+                                <a href="https://google-keep-clone01.herokuapp.com/" className="links" id="anchor" target="_blank">🔗</a>
                         </div>
                     </div>
                     <div className="col-md-4 col-10 mx-auto">
                     <img src={calculator} alt="men" id="images1"/>
                         <div className="cardCaption">
                                 <h2 className="text-center p-4">Calculator</h2>
-                                <a href="https://github.com/RajbirSingh1233/calculator" className="links" id="anchor" target="_blank">🔗</a>
+                                <a href="https://react-calculator01.herokuapp.com/" className="links" id="anchor" target="_blank">🔗</a>
                         </div>
                     </div>
                     <div className="col-md-4 col-10 mx-auto">

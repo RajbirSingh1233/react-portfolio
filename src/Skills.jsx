@@ -14,11 +14,15 @@ const Skills = () =>{
             <li className="mt-3">CSS</li>
             <Line percent="65" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
             <li className="mt-3">Javascript</li>
-            <Line percent="50" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
+            <Line percent="70" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
+            <li className="mt-3">React.js</li>
+            <Line percent="75" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
             <li className="mt-3">Java</li>
-            <Line percent="40" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
-            <li className="mt-3">Python</li>
-            <Line percent="20" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
+            <Line percent="70" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
+            <li className="mt-3">Bootstrap</li>
+            <Line percent="80" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
+            <li className="mt-3">Git</li>
+            <Line percent="70" strokeWidth="2" strokeColor="rgb(194, 194, 56)" trailWidth="2"/>
         </ul>
     </div>
     <div className="pro_div w-50">
@@ -32,7 +36,7 @@ const Skills = () =>{
                 </ul>
                 <ul className="Circle2_ul">
                 <li className="li1 mr-5">Team Work</li>
-                <Circle percent="50" className="mt-5 circle1" strokeWidth="8" style={{ width: 100, height: 100 }} strokeColor="rgb(194, 194, 56)" trailWidth="8" />
+                <Circle percent="70" className="mt-5 circle1" strokeWidth="8" style={{ width: 100, height: 100 }} strokeColor="rgb(194, 194, 56)" trailWidth="8" />
                 
                 <li className="li2 ml-5">Creativity</li>
                 <Circle percent="80" className="mt-5 circle2" strokeWidth="8" style={{ width: 100, height: 100 }} strokeColor="rgb(194, 194, 56)" trailWidth="8" />

@@ -20,7 +20,7 @@ const Footer = () =>{
                         <svg className="svg1">
                             <circle className="circle1"></circle>
                         </svg>
-                        <a href="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100004294264151" target="_blank"><i className="fa fa-facebook fa-2x"></i></a>
                     </div>
   
                     <div className="icon">
@@ -34,7 +34,7 @@ const Footer = () =>{
                         <svg className="svg1">
                             <circle className="circle1"></circle>
                         </svg>
-                        <a href="https://www.twitter.com/" target="_blank"><i className="fa fa-twitter fa-2x"></i></a>
+                        <a href="https://twitter.com/RajbirS50312918?t=rdKGEeSqu8LfFIe1Qw9eZg&s=09" target="_blank"><i className="fa fa-twitter fa-2x"></i></a>
                     </div>
                 </div>
             </div>
